@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="navbar"></div>
+  <form id="registerForm" class="container" onsubmit="register(event)">
+    <h2>Register</h2>
+    <label>Name</label><input id="name" required>
+    <label>Email</label><input id="email" type="email" required>
+    <label>Password</label><input id="password" type="password" required>
+    <button type="submit">Sign Up</button>
+  </form>
+  <script src="js/navbar.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
