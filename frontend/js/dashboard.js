@@ -1,9 +1,7 @@
-// must run after navbar.js
 (async function(){
     const token = localStorage.getItem('token');
     if (!token) return window.location='login.html';
   
-    // fetch all users
     const res = await fetch(
       'https://skill-endorsement-platform-backend.onrender.com/api/users',
       { headers:{ 'Authorization':'Bearer '+token }}

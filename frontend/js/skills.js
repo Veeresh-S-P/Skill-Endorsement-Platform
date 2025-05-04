@@ -4,7 +4,6 @@
     const me = JSON.parse(localStorage.getItem('user'));
     const userId = me._id;
   
-    // show existing skills
     async function load() {
       const res = await fetch(
         `https://skill-endorsement-platform-backend.onrender.com/api/skills/${userId}`,

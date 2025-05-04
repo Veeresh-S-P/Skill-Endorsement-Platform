@@ -1,4 +1,3 @@
-// inject navbar into every page
 const navContainer = document.getElementById('navbar');
 if (navContainer) {
   const user = JSON.parse(localStorage.getItem('user') || 'null');

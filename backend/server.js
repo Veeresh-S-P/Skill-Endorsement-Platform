@@ -17,6 +17,13 @@ app.use('/api/users', userRoutes);
 app.use('/api/skills', skillRoutes);
 
 const PORT = process.env.PORT || 6009;
+
+
+
+
+
+
+
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
 

@@ -14,7 +14,7 @@ async function register(e) {
   if (res.ok) {
     localStorage.setItem('token', data.token);
     localStorage.setItem('user', JSON.stringify(data.user));
-    window.location = 'dashboard.html';
+    window.location = 'login.html';
   } else {
     alert(data.msg || 'Registration failed');
   }

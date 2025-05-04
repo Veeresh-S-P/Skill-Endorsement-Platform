@@ -5,7 +5,6 @@
     const userId = params.get('userId');
     if (!userId) return alert('No user specified');
   
-    // load target user’s skills
     const res = await fetch(
       `https://skill-endorsement-platform-backend.onrender.com/api/skills/${userId}`,
       { headers:{ 'Authorization':'Bearer '+token }}
@@ -16,7 +15,6 @@
       sel.innerHTML += `<option value="${s.name}">${s.name}</option>`;
     });
   
-    // submit endorsement
     document.getElementById('endorseForm')
       .addEventListener('submit', async e=>{
         e.preventDefault();
